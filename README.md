@@ -1,5 +1,8 @@
 # Travlr Getaways — Express Static Site
 
+![Uploading image.png…]()
+
+
 ## Overview
 This repository contains a small **Node.js + Express** application that serves the **Travlr Getaways** static website (HTML/CSS/JS/images). The Express server hosts all client files from the `public/` directory and renders the homepage at `/`.
 
