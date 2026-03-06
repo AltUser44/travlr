@@ -1,6 +1,6 @@
 # Travlr Getaways — Express Static Site
 
-![Uploading image.png…]()
+<img width="1908" height="1003" alt="Screenshot 2026-03-06 003414" src="https://github.com/user-attachments/assets/98463d3c-985f-4dfe-b73e-e248c1232a67" />
 
 
 ## Overview
