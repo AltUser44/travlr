@@ -1,6 +1,13 @@
 const express = require('express');
 const path = require('path');
 const hbs = require('hbs');
+const mongoose = require('mongoose');
+
+mongoose.connect('mongodb://127.0.0.1:27017/travlr')
+  .then(() => console.log('MongoDB connected'))
+  .catch(err => console.error('MongoDB connection error:', err));
+
+require('./app_server/models/trips');
 
 const indexRouter = require('./app_server/routes/index');
 
@@ -16,7 +23,7 @@ hbs.registerPartials(path.join(__dirname, 'app_server', 'views', 'partials'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Register application routes
-app.use('/', indexRouter);
+app.use('/api', indexRouter);
 
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
