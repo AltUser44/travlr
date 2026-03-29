@@ -1,6 +1,6 @@
 // Mirrors the MongoDB trip schema from the Express backend
 export interface Trip {
-  _id?: string;       // MongoDB document ID (optional on create)
+  _id?: string;       // MongoDB document ID 
   code: string;       // Unique trip identifier
   name: string;
   length: string;     // e.g. "7 nights"

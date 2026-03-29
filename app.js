@@ -9,6 +9,7 @@ mongoose.connect('mongodb://127.0.0.1:27017/travlr')
   .catch(err => console.error('MongoDB connection error:', err));
 
 require('./app_server/models/trips');
+require('./app_api/models/users');
 
 const indexRouter = require('./app_server/routes/index');
 const apiRouter = require('./app_api/routes/index');

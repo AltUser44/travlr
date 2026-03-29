@@ -30,7 +30,7 @@
 
       <p class="card-description flex-grow-1">{{ trip.description }}</p>
 
-      <div class="d-flex gap-2 mt-3">
+      <div class="d-flex gap-2 mt-3" *ngIf="isLoggedIn">
         <button class="btn btn-warning btn-sm px-3" (click)="editTrip(trip)">✏️ Edit</button>
         <button class="btn btn-danger btn-sm px-3" (click)="deleteTrip(trip.code)">🗑 Delete</button>
       </div>
