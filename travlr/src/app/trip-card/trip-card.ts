@@ -12,6 +12,7 @@ import { Trip } from '../models/trip';
 })
 export class TripCard {
   @Input() trip!: Trip;
+  @Input() isLoggedIn = false;
   @Output() tripDelete = new EventEmitter<string>();
 
   constructor(private router: Router) {}
