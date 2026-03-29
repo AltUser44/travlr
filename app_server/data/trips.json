@@ -28,5 +28,65 @@
     "perPerson": "1199.00",
     "image": "reef3.jpg",
     "description": "Donec sed felis risus. Nulla facilisi. Donec a orci tellus, et auctor odio. Fusce ac orci nibh, quis semper arcu. Cras orci neque, euismod et accumsan ac, sagittis molestie lorem. Proin odio sapien, elementum at tempor non. Vulputate eget libero. In hac habitasse platea dictumst. Integer purus justo, egestas eu consectetur eu, cursus in tortor."
+  },
+  {
+    "code": "BALI2026",
+    "name": "Bali Beach Escape",
+    "length": "7 nights / 8 days",
+    "start": "2026-05-10T08:00:00Z",
+    "resort": "Seminyak Sands Resort",
+    "perPerson": "1599.00",
+    "image": "https://placehold.co/400x200?text=Bali",
+    "description": "Experience the magical island of Bali with stunning rice terraces, sacred temples, and pristine beaches. Your stay at Seminyak Sands Resort includes daily breakfast, two guided tours, and access to world-class spa facilities. Snorkel the vibrant coral gardens of Nusa Penida and watch traditional Kecak fire dances at sunset."
+  },
+  {
+    "code": "CARIB2026",
+    "name": "Caribbean Island Hopper",
+    "length": "10 nights / 11 days",
+    "start": "2026-06-15T08:00:00Z",
+    "resort": "Nassau Royal Palms Resort",
+    "perPerson": "2499.00",
+    "image": "https://placehold.co/400x200?text=Caribbean",
+    "description": "Sail through the sparkling turquoise waters of the Caribbean, visiting Nassau, Aruba, and St. Lucia. This all-inclusive package covers luxury accommodations, gourmet dining, snorkeling gear, and one scuba diving certification course. Dance the nights away at beach bonfires and explore vibrant local markets by day."
+  },
+  {
+    "code": "MEDIT2026",
+    "name": "Mediterranean Dream",
+    "length": "8 nights / 9 days",
+    "start": "2026-07-20T08:00:00Z",
+    "resort": "Santorini Cliffside Villas",
+    "perPerson": "1899.00",
+    "image": "https://placehold.co/400x200?text=Santorini",
+    "description": "Perched above the Aegean Sea, Santorini Cliffside Villas offers breathtaking caldera views, infinity pools, and whitewashed architecture unique to the Cyclades. Tour the ancient ruins of Akrotiri, sip local Assyrtiko wine at vineyard tastings, and cruise to the volcanic hot springs of Nea Kameni."
+  },
+  {
+    "code": "SAFAR2026",
+    "name": "Serengeti Safari Adventure",
+    "length": "5 nights / 6 days",
+    "start": "2026-08-05T08:00:00Z",
+    "resort": "Serengeti Luxury Tented Camp",
+    "perPerson": "2999.00",
+    "image": "https://placehold.co/400x200?text=Safari",
+    "description": "Witness the breathtaking Great Migration as millions of wildebeest thunder across the Serengeti plains. Stay in lavish canvas suites with en-suite bathrooms and private decks. Daily game drives with expert naturalist guides bring you face-to-face with lions, elephants, leopards, and cheetahs in their natural habitat."
+  },
+  {
+    "code": "ALPS2026",
+    "name": "Swiss Alps Mountain Retreat",
+    "length": "6 nights / 7 days",
+    "start": "2026-09-12T08:00:00Z",
+    "resort": "Zermatt Alpine Grand Hotel",
+    "perPerson": "1799.00",
+    "image": "https://placehold.co/400x200?text=Swiss+Alps",
+    "description": "Breathe in crisp mountain air while gazing at the iconic Matterhorn from your private chalet balcony. The package includes a Gornergrat Railway excursion, guided glacier hike, cheese fondue evening, and two days of equipment rental for hiking or mountain biking on world-renowned trails through alpine meadows."
+  },
+  {
+    "code": "MALD2026",
+    "name": "Maldives Overwater Paradise",
+    "length": "7 nights / 8 days",
+    "start": "2026-10-01T08:00:00Z",
+    "resort": "Azure Lagoon Overwater Bungalows",
+    "perPerson": "3299.00",
+    "image": "https://placehold.co/400x200?text=Maldives",
+    "description": "Sleep above the crystal-clear Indian Ocean in a private overwater bungalow with a glass floor panel revealing the vibrant coral reef below. This ultra-luxury package includes sunrise yoga, dolphin-watching cruises, private sandbar dining under the stars, unlimited snorkeling, and one guided night dive with bioluminescent plankton."
   }
 ]
