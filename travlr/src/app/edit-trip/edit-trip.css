@@ -1,0 +1,63 @@
+.glass-form {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 20px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.45);
+  color: #fff;
+  overflow: hidden;
+}
+
+.glass-form .card-header {
+  background: linear-gradient(135deg, #f6ad55, #c05621) !important;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  border-radius: 20px 20px 0 0;
+  padding: 1.25rem 1.5rem;
+}
+
+.glass-form .card-body {
+  padding: 2rem;
+}
+
+.glass-form .form-label {
+  color: rgba(255, 220, 160, 0.9);
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.3rem;
+}
+
+.glass-form .form-control {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 10px;
+  color: #fff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.glass-form .form-control:focus {
+  background: rgba(255,255,255,0.15);
+  border-color: rgba(246, 173, 85, 0.7);
+  box-shadow: 0 0 0 3px rgba(246,173,85,0.2);
+  color: #fff;
+}
+
+.glass-form .form-control[readonly] {
+  background: rgba(255,255,255,0.05);
+  color: rgba(255,255,255,0.5);
+  cursor: not-allowed;
+}
+
+.glass-form .form-control::placeholder {
+  color: rgba(200,200,255,0.45);
+}
+
+.glass-form .form-control.is-invalid {
+  border-color: #fc8181;
+}
+
+.glass-form .invalid-feedback {
+  color: #fc8181;
+}

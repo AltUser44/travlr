@@ -1,0 +1,39 @@
+<div class="col-md-4">
+  <div class="trip-glass-card h-100 d-flex flex-column">
+    <img [src]="trip.image" [alt]="trip.name"
+         onerror="this.src='https://placehold.co/400x200?text=No+Image'">
+    <div class="p-4 d-flex flex-column flex-grow-1">
+      <h5 class="fw-bold mb-3" style="font-size:1.15rem;">{{ trip.name }}</h5>
+
+      <div class="d-flex flex-wrap gap-3 mb-3">
+        <div>
+          <div class="card-label">Code</div>
+          <div class="card-value">{{ trip.code }}</div>
+        </div>
+        <div>
+          <div class="card-label">Length</div>
+          <div class="card-value">{{ trip.length }}</div>
+        </div>
+        <div>
+          <div class="card-label">Start</div>
+          <div class="card-value">{{ trip.start | date:'mediumDate' }}</div>
+        </div>
+        <div>
+          <div class="card-label">Resort</div>
+          <div class="card-value">{{ trip.resort }}</div>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <span class="price-badge">$ {{ trip.perPerson }} / person</span>
+      </div>
+
+      <p class="card-description flex-grow-1">{{ trip.description }}</p>
+
+      <div class="d-flex gap-2 mt-3">
+        <button class="btn btn-warning btn-sm px-3" (click)="editTrip(trip)">✏️ Edit</button>
+        <button class="btn btn-danger btn-sm px-3" (click)="deleteTrip(trip.code)">🗑 Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
