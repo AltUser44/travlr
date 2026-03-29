@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const hbs = require('hbs');
 const mongoose = require('mongoose');
+const cors = require('cors');
 
 mongoose.connect('mongodb://127.0.0.1:27017/travlr')
   .then(() => console.log('MongoDB connected'))
@@ -19,6 +20,9 @@ const port = 3000;
 app.set('views', path.join(__dirname, 'app_server', 'views'));
 app.set('view engine', 'hbs');
 hbs.registerPartials(path.join(__dirname, 'app_server', 'views', 'partials'));
+
+// Enable CORS for the Angular SPA
+app.use(cors());
 
 // Parse JSON and URL-encoded request bodies
 app.use(express.json());

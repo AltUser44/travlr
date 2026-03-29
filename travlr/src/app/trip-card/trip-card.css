@@ -1,0 +1,53 @@
+.trip-glass-card {
+  background: rgba(255, 255, 255, 0.09);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trip-glass-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.55);
+}
+
+.trip-glass-card img {
+  border-radius: 0;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: rgba(180, 200, 255, 0.85);
+}
+
+.card-value {
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.card-description {
+  color: rgba(220, 220, 255, 0.78);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.price-badge {
+  display: inline-block;
+  background: rgba(99, 179, 237, 0.25);
+  border: 1px solid rgba(99,179,237,0.4);
+  border-radius: 30px;
+  padding: 2px 14px;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #90cdf4;
+}
