@@ -103,7 +103,7 @@ This project used three distinct frontend approaches, each suited to a different
 
 The second approach used Express combined with the Handlebars (HBS) template engine to render views on the server. This allowed dynamic data—such as trip listings pulled from MongoDB—to be injected into HTML before it was sent to the browser. Server-side rendering is beneficial for SEO and initial load performance because the browser receives complete markup, but the server must regenerate the page for every request, which introduces latency.
 
-The Angular SPA, used for the admin portal, is the most modern approach. Angular loads once in the browser and then handles all navigation and data fetching internally via HTTP calls to the REST API. The result is a fast, app-like experience with no full page reloads. The trade-off is a more complex build pipeline and a larger initial JavaScript bundle. The SPA is ideal for the admin use case, where interactions like adding, editing, and deleting trips need to feel immediate and responsive.
+The Angular SPA, used for the admin portal, is the most modern approach. Angular loads once in the browser and then handles all navigation and data fetching internally via HTTP calls to the REST API. The result is a fast, app-like experience with no full-page reloads. The trade-off is a more complex build pipeline and a larger initial JavaScript bundle. The SPA is ideal for the admin use case, where interactions like adding, editing, and deleting trips need to feel immediate and responsive.
 
 **Why did the backend use a NoSQL MongoDB database?**
 
@@ -129,11 +129,11 @@ On the backend, authentication logic was consolidated into a dedicated `authjwt.
 
 ### Testing
 
-**Explain your understanding of methods, endpoints, and security in a full stack application.**
+**Explain your understanding of methods, endpoints, and security in a full-stack application.**
 
 HTTP methods define the intent of a request. In this API, `GET` requests are read-only and publicly accessible—no token is required to browse trips. `POST`, `PUT`, and `DELETE` requests modify data and are therefore protected, meaning the server refuses them unless the request carries a valid JWT in the `Authorization: Bearer <token>` header.
 
-An endpoint is the combination of an HTTP method and a URL path that the server maps to a specific controller action. For example, `PUT /api/trips/:tripCode` maps to the `tripsUpdateTrip` controller. Testing all endpoints means verifying expected responses for both valid inputs and invalid inputs (wrong data types, missing fields) as well as both authenticated and unauthenticated calls.
+An endpoint is the combination of an HTTP method and a URL path that the server maps to a specific controller action. For example, `PUT /api/trips/:tripCode` maps to the `tripsUpdateTrip` controller. Testing all endpoints means verifying expected responses for both valid inputs and invalid inputs (wrong data types, missing fields), as well as both authenticated and unauthenticated calls.
 
 Security adds a testing dimension that goes beyond correctness. Every protected endpoint must be tested with: (1) no token—expecting a `401 Unauthorized` response; (2) a malformed or expired token—again expecting `401`; and (3) a valid token—expecting the operation to succeed. Tools like Postman make this straightforward by allowing custom `Authorization` headers to be included or omitted per request. The Angular `AuthGuard` was also tested by navigating directly to protected routes (`/add-trip`, `/edit-trip`) while logged out to confirm the guard redirected to the login page instead of rendering the form.
 
@@ -143,13 +143,12 @@ Security adds a testing dimension that goes beyond correctness. Every protected 
 
 **How has this course helped you in reaching your professional goals? What skills have you learned, developed, or mastered in this course to help you become a more marketable candidate in your career field?**
 
-This course produced concrete, demonstrable evidence of full stack engineering capability. Before this course, my experience was limited to isolated frontend or backend exercises. Building Travlr Getaways from a static HTML page all the way to a secured REST API with an Angular admin portal gave me end-to-end ownership of a real application: provisioning a database, designing a schema, building a RESTful API, implementing JWT authentication, and consuming that API from a TypeScript SPA.
+This course produced concrete, demonstrable evidence of full-stack engineering capability. Before this course, my experience was limited to isolated frontend or backend exercises. Building Travlr Getaways from a static HTML page all the way to a secured REST API with an Angular admin portal gave me end-to-end ownership of a real application: provisioning a database, designing a schema, building a RESTful API, implementing JWT authentication, and consuming that API from a TypeScript SPA.
 
 The skills I developed that have the greatest market value are: understanding the full request/response lifecycle across the stack; implementing stateless authentication with JWTs and hashed passwords using PBKDF2; building reusable Angular components and injectable services that follow the single-responsibility principle; and writing CRUD operations against a MongoDB database using Mongoose. Being able to walk a future employer through this application—explaining why each architectural decision was made—demonstrates not just the ability to write code, but the ability to reason about software design. That combination of practical skill and architectural understanding is what I believe will be most valuable as I continue to grow in my career.
 
----
 
-*Note: This README was prepared with the assistance of GitHub Copilot (Claude Sonnet 4.6) to help organize and articulate the reflection responses.*
+
 └── public/
     ├── index.html
     ├── about.html
